@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: "Source Code Pro", monospace;
+}
+.container{
+    width: 100%;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #302f2f;
+    color: #fff;
+    position: relative;
+    position: sticky;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .menu {
+    display: flex;
+    align-items: center;
+}
+.navbar .menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 28px;
+    transition: background-color 0.3s;
+}
+
+.navbar .menu a:hover {
+    /* background-color: #929090; */
+    border-radius: 5px;
+    font-size: 30px;
+}
+/* end of navbar */
+.about{
+    /* margin-top: 2rem; */
+    /* margin-left: 2rem; */
+    background: url(../showcase.jpg)no-repeat center center/cover;
+    height: 100vh;
+}
+.typewriter {
+    border-right: 2px solid black;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    padding-top: 15rem;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: bolder;
+    animation: blink 0.7s step-end infinite;
+}
+/* end of about */
+.skill{
+    margin-top: 1.5rem;
+    align-items: center;
+    text-align: center;
+}
+.skill h1{
+    font-size: 2.5rem;
+}
+.skill h2{
+    margin-bottom: 2rem;
+}
+.skill p{
+    font-size: 20px;
+
+}
+/* end of skills */
+.flex-1 {
+    margin-top: 1rem;
+    margin: 0 3rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+#box-1 {
+    background-color: rgba(240, 239, 239, 0.786);
+    padding: 30px 10px;
+    border-radius: 10px;
+    margin: 1rem; /* Use margin for spacing */
+    width: 300px; /* Set width */
+    text-align: center;
+    color: #000;
+}
+/* end of flexes  */
+.aboutme{
+    display: flex;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    background-color: rgba(240, 239, 239, 0.786);
+    width: 93%;
+    height: 500px;
+}
+#img img{
+    width: 300px; /* Make image responsive */
+    max-width: 300px; /* Set max width */
+    height: 300px; /* Maintain aspect ratio */
+    padding: 2rem;
+    margin-top: 2rem; /* Adjust margin */
+}
+.line {
+    height: 25rem;
+    width: 1px;
+    margin-top: 3rem;
+    margin-left: 3rem;
+    background-color: #c6c6c6;
+}
+#omo{
+    margin-left: 5rem;
+}
+
+#omo h2{
+    margin-top: 3rem;
+    font-size: 30px;
+}
+#omo p{
+    line-height: 1.5em;
+    margin-top: 2rem;
+    margin-right: 3rem;
+    width: 90%;
+}
+/* end of about me */
+.dot{
+    background-color: #c6c6c6;
+    width:100%;
+    margin-top: 5rem;
+    height: 1px;
+}
+.bye{
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+/* Media Queries */
+
+/* Large Devices (Desktops) */
+@media (max-width: 1200px) {
+    .aboutme {
+      flex-direction: column;
+    }
+    #img img {
+      margin-top: 2rem;
+      padding-left: 0;
+    }
+    #omo {
+      margin-left: 0;
+    }
+    #omo h2 {
+      margin-top: 2rem;
+    }
+    #omo p {
+      margin-right: 0;
+      width: 100%;
+    }
+  }
+  
+  /* Medium Devices (Tablets) */
+  @media (max-width: 768px) {
+    .navbar .menu a {
+      font-size: 20px;
+    }
+    .typewriter {
+      padding-top: 10rem;
+      font-size: 1.5rem;
+    }
+    .skill h1 {
+      font-size: 2rem;
+    }
+    .skill h2 {
+      margin-bottom: 1.5rem;
+    }
+    .flex-1 {
+        flex-direction: column; /* Stack boxes vertically */
+    }
+
+    #box-1 {
+        width: auto; /* Allow box to take full width */
+        margin: 1rem 0; /* Margin on top and bottom */
+    }
+
+    .aboutme {
+      height: auto;
+      padding: 2rem;
+    }
+    #img img {
+        width: 90%; /* Make image take more width */
+    }
+    .line {
+      display: none; /* Hide the line on smaller screens */
+    }
+  }
+  
+  /* Small Devices (Smartphones) */
+  @media (max-width: 480px) {
+    .navbar {
+      padding: 10px 20px;
+    }
+    .navbar .logo {
+      font-size: 18px;
+    }
+    .navbar .menu a {
+      font-size: 16px;
+    }
+    .typewriter {
+      padding-top: 8rem;
+      font-size: 1.3rem;
+    }
+    .skill h1 {
+      font-size: 1.8rem;
+    }
+    .skill h2 {
+      margin-bottom: 1rem;
+    }
+    .flex-1 {
+      flex-direction: column;
+    }
+    #box-1 {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .aboutme {
+      padding: 1rem;
+      margin-left: 0;
+      margin-right: 0;
+      width: 100%;
+    }
+    #img img {
+        max-width: 100%; /* Image full width on small screens */
+        padding: 0.5rem; /* Reduce padding */
+    }
+
+
+    #omo p {
+      line-height: 1.1em;
+      font-size: 16px;
+    }
+  }
+  
